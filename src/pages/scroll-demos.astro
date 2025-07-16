@@ -1,0 +1,98 @@
+---
+import Layout from "../layouts/Layout.astro"
+
+const title = "ADO CODE | Demos de Scroll Snap"
+const demos = [
+  {
+    title: "Secciones Básicas con Scroll Snap",
+    description: "Implementación básica de secciones con scroll snap y cambio de color del logo",
+    url: "/scroll-sections"
+  },
+  {
+    title: "Secciones Mejoradas",
+    description: "Secciones con scroll snap mejoradas con animaciones y efectos visuales",
+    url: "/enhanced-sections"
+  },
+  {
+    title: "Navegación con Header",
+    description: "Secciones con scroll snap y un header que cambia de color",
+    url: "/scroll-with-header"
+  },
+  {
+    title: "Página Completa",
+    description: "Implementación completa de una página con scroll snap y contenido real",
+    url: "/full-page"
+  },
+  {
+    title: "Transiciones entre Secciones",
+    description: "Diferentes tipos de transiciones entre secciones al hacer scroll",
+    url: "/transitions"
+  }
+]
+---
+
+<Layout title={title}>
+  <div class="container px-4 md:px-6 py-20">
+    <h1 class="text-3xl md:text-4xl font-bold mb-8 text-center">Demos de Scroll Snap con Cambio de Color</h1>
+    
+    <div class="max-w-3xl mx-auto">
+      <p class="text-muted-foreground text-center mb-12">
+        Explora diferentes implementaciones de secciones con scroll snap y cambio de color del logo.
+        Cada demo muestra una forma diferente de implementar esta funcionalidad.
+      </p>
+      
+      <div class="grid gap-6">
+        {demos.map(demo => (
+          <a 
+            href={demo.url}
+            class="block p-6 rounded-xl bg-white dark:bg-slate-800 shadow-sm hover:shadow-md transition-shadow border border-gray-100 dark:border-gray-700"
+          >
+            <h2 class="text-xl font-bold mb-2">{demo.title}</h2>
+            <p class="text-muted-foreground mb-4">{demo.description}</p>
+            <div class="flex justify-end">
+              <span class="inline-flex items-center text-primary hover:underline">
+                Ver demo
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  stroke-width="2" 
+                  stroke-linecap="round" 
+                  stroke-linejoin="round" 
+                  class="ml-1 h-4 w-4"
+                >
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+      
+      <div class="mt-12 text-center">
+        <a href="/" class="inline-flex items-center text-primary hover:underline">
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            width="24" 
+            height="24" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            stroke="currentColor" 
+            stroke-width="2" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            class="mr-1 h-4 w-4"
+          >
+            <path d="m12 19-7-7 7-7"></path>
+            <path d="M19 12H5"></path>
+          </svg>
+          Volver al inicio
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,27 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Círculo exterior -->
+  <circle cx="256" cy="256" r="240" fill="#0066FF" fill-opacity="0.1" />
+  
+  <!-- Anillo exterior -->
+  <circle cx="256" cy="256" r="220" stroke="#0066FF" stroke-width="8" stroke-opacity="0.8" />
+  
+  <!-- Anillo medio -->
+  <circle cx="256" cy="256" r="180" stroke="#0066FF" stroke-width="6" stroke-opacity="0.6" />
+  
+  <!-- Anillo interior -->
+  <circle cx="256" cy="256" r="140" stroke="#0066FF" stroke-width="4" stroke-opacity="0.4" />
+  
+  <!-- Letra A -->
+  <path d="M200 180L240 320H220L210 290H170L160 320H140L180 180H200ZM190 200L175 270H205L190 200Z" fill="#0066FF" />
+  
+  <!-- Letra D -->
+  <path d="M260 180H300C320 180 335 185 345 195C355 205 360 220 360 240C360 260 355 275 345 285C335 295 320 300 300 300H260V180ZM280 200V280H300C313.333 280 323.333 276.667 330 270C336.667 263.333 340 253.333 340 240C340 226.667 336.667 216.667 330 210C323.333 203.333 313.333 200 300 200H280Z" fill="#0066FF" />
+  
+  <!-- Letra O -->
+  <path d="M380 240C380 226.667 383.333 216.667 390 210C396.667 203.333 406.667 200 420 200C433.333 200 443.333 203.333 450 210C456.667 216.667 460 226.667 460 240C460 253.333 456.667 263.333 450 270C443.333 276.667 433.333 280 420 280C406.667 280 396.667 276.667 390 270C383.333 263.333 380 253.333 380 240ZM400 240C400 248 401.667 254 405 258C408.333 262 413.333 264 420 264C426.667 264 431.667 262 435 258C438.333 254 440 248 440 240C440 232 438.333 226 435 222C431.667 218 426.667 216 420 216C413.333 216 408.333 218 405 222C401.667 226 400 232 400 240Z" fill="#0066FF" />
+  
+  <!-- Línea de código debajo -->
+  <path d="M160 340H352" stroke="#0066FF" stroke-width="8" stroke-linecap="round" />
+  <path d="M160 360H288" stroke="#0066FF" stroke-width="8" stroke-linecap="round" />
+  <path d="M160 380H320" stroke="#0066FF" stroke-width="8" stroke-linecap="round" />
+</svg>
