@@ -65,9 +65,8 @@ export default function HeroLogoAnimation() {
           duration: 3,
           repeat: Number.POSITIVE_INFINITY,
           repeatType: "reverse",
-          type: "spring",
-          stiffness: 100,
-          damping: 10,
+          type: "keyframes", // Changed from "spring" to "keyframes" to support multiple keyframes
+          ease: "easeInOut",
         }}
       >
         <Image

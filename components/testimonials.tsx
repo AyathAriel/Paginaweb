@@ -57,7 +57,7 @@ export default function Testimonials() {
             >
               <div className="glass-card rounded-2xl p-8 h-full shadow-blue-sm hover:shadow-blue transition-all duration-300">
                 <Quote className="h-10 w-10 text-blue-300 dark:text-blue-700 mb-6" />
-                <p className="text-lg italic mb-8">"{testimonial.quote}"</p>
+                <p className="text-lg italic mb-8">&ldquo;{testimonial.quote}&rdquo;</p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 rounded-full bg-gradient-blue text-white flex items-center justify-center font-medium mr-3 shadow-sm">
                     {testimonial.initials}

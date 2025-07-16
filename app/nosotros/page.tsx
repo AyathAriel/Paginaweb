@@ -1,14 +1,36 @@
+"use client"
+
 import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { motion } from "framer-motion"
+import { Badge } from "@/components/ui/badge"
+import { Mail, Phone, ExternalLink } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export default function AboutPage() {
+  // Información del CEO
+  const ceoInfo = {
+    name: "AYATH MEDINA",
+    position: "CEO & Fundador",
+    company: "ADO CODE Technologies",
+    bio: "Líder visionario con más de 7 años de experiencia en el desarrollo de soluciones tecnológicas innovadoras. Especializado en transformación digital empresarial y automatización inteligente, ha dirigido múltiples proyectos exitosos que han revolucionado la forma en que las empresas operan en la era digital.",
+    image: "/fotoceo.jpeg", // Foto real del CEO AYATH MEDINA
+    experience: "7 años de experiencia",
+    specialties: ["Transformación Digital", "Liderazgo Empresarial", "Innovación Tecnológica"],
+    education: "Ingeniería en Sistemas y Especialización en Inteligencia Artificial",
+    achievements: [
+      "Fundador y CEO de ADO CODE Technologies",
+      "Más de 100 proyectos de transformación digital completados exitosamente",
+      "Reconocido como líder innovador en tecnología empresarial en Panamá"
+    ],
+    contact: {
+      email: "ayath@adocode.com",
+      linkedin: "https://www.linkedin.com/in/ayath-medina-84ba16328/",
+      phone: "+507 66448655"
+    }
+  }
+
   const teamMembers = [
-    {
-      name: "Ana Rodríguez",
-      position: "CEO & Fundadora",
-      bio: "Experta en desarrollo de software y estrategias de transformación digital",
-      image: "/placeholder.svg?height=300&width=300",
-    },
     {
       name: "Carlos Méndez",
       position: "CTO",
@@ -97,6 +119,123 @@ export default function AboutPage() {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Sección del CEO */}
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-950/30 dark:to-indigo-900/20">
+        <div className="container px-4 md:px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl mb-4">Liderazgo</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Conoce al visionario detrás de ADO CODE Technologies
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="max-w-6xl mx-auto"
+          >
+            <Card className="overflow-hidden shadow-2xl border-0 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm">
+              <div className="grid lg:grid-cols-2 gap-0">
+                {/* Imagen del CEO */}
+                <div className="relative h-[500px] lg:h-[700px]">
+                  <div 
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                    style={{
+                      backgroundImage: `url(${ceoInfo.image})`,
+                    }}
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                  </div>
+                  
+                  {/* Elementos decorativos */}
+                  <div className="absolute top-10 left-10 w-20 h-20 bg-blue-500/10 rounded-full blur-xl"></div>
+                  <div className="absolute bottom-10 right-10 w-32 h-32 bg-blue-600/10 rounded-full blur-2xl"></div>
+                </div>
+
+                {/* Información del CEO */}
+                <div className="p-8 lg:p-12 flex flex-col justify-center">
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-3xl font-bold mb-2">{ceoInfo.name}</h3>
+                      <p className="text-xl text-primary font-semibold mb-1">{ceoInfo.position}</p>
+                      <p className="text-lg text-muted-foreground">{ceoInfo.company}</p>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2">
+                      {ceoInfo.specialties.map((specialty, index) => (
+                        <Badge key={index} variant="secondary" className="text-sm">
+                          {specialty}
+                        </Badge>
+                      ))}
+                    </div>
+
+                    <div className="space-y-4">
+                      <p className="text-muted-foreground leading-relaxed">
+                        {ceoInfo.bio}
+                      </p>
+
+                      <div className="grid gap-3">
+                        <div>
+                          <h4 className="font-semibold mb-2">Experiencia</h4>
+                          <p className="text-muted-foreground">{ceoInfo.experience}</p>
+                        </div>
+
+                        <div>
+                          <h4 className="font-semibold mb-2">Educación</h4>
+                          <p className="text-muted-foreground">{ceoInfo.education}</p>
+                        </div>
+                      </div>
+
+                      <div>
+                        <h4 className="font-semibold mb-3">Logros Destacados</h4>
+                        <ul className="space-y-2">
+                          {ceoInfo.achievements.map((achievement, index) => (
+                            <li key={index} className="flex items-start">
+                              <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0" />
+                              <span className="text-muted-foreground">{achievement}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+
+                    {/* Contacto del CEO */}
+                    <div className="flex flex-wrap gap-3 pt-4 border-t">
+                      <Button variant="outline" size="sm" asChild>
+                        <a href={`mailto:${ceoInfo.contact.email}`} className="flex items-center gap-2">
+                          <Mail className="h-4 w-4" />
+                          Contactar
+                        </a>
+                      </Button>
+                      <Button variant="outline" size="sm" asChild>
+                        <a href={ceoInfo.contact.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                          <ExternalLink className="h-4 w-4" />
+                          LinkedIn
+                        </a>
+                      </Button>
+                      <Button variant="outline" size="sm" asChild>
+                        <a href={`tel:${ceoInfo.contact.phone}`} className="flex items-center gap-2">
+                          <Phone className="h-4 w-4" />
+                          Llamar
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
         </div>
       </section>
 

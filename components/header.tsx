@@ -44,7 +44,13 @@ export default function Header() {
               transition={{ duration: 0.3, delay: 0.1 + i * 0.05 }}
             >
               <Link
-                href={item === "Inicio" ? "/" : `/${item.toLowerCase().replace(" ", "-").replace("é", "e")}`}
+                href={
+                  item === "Inicio"
+                    ? "/"
+                    : item === "Quiénes Somos"
+                      ? "/nosotros"
+                      : `/${item.toLowerCase().replace(" ", "-").replace("é", "e")}`
+                }
                 className="text-sm font-medium transition-colors hover:text-primary relative group"
               >
                 {item}
