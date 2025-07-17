@@ -141,7 +141,7 @@ pnpm lint         # Ejecuta ESLint para revisar el código
 - 🎯 **7 años de experiencia** en transformación digital
 - 🎓 **Ingeniería en Sistemas** y Especialización en IA
 - 🏆 **100+ proyectos** completados exitosamente
-- 📧 **Contacto**: ayath@adocode.com
+- 📧 **Contacto**: ayath@adocodetech.com
 - 💼 **LinkedIn**: [ayath-medina-84ba16328](https://www.linkedin.com/in/ayath-medina-84ba16328/)
 
 ## 🌟 Servicios Destacados
@@ -216,7 +216,7 @@ Este proyecto es propiedad de **ADO CODE Technologies**. Todos los derechos rese
 ## 📞 Contacto
 
 **ADO CODE Technologies**
-- 🌐 **Website**: [En construcción]
+- 🌐 **Website**: Production
 - 📧 **Email**: ayath@adocodetech.com
 - 📱 **Teléfono**: +507 6644-8655
 - 📍 **Ubicación**: Ciudad de Panamá, Panamá
