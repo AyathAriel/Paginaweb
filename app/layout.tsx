@@ -26,7 +26,8 @@ export const metadata = {
   title: "ADO CODE Technologies | Soluciones Tecnológicas Avanzadas",
   description:
     "Transformamos empresas con soluciones tecnológicas avanzadas. Automatización inteligente, desarrollo de software a medida y optimización de procesos empresariales.",
-    generator: 'v0.dev'
+  generator: 'Next.js',
+  metadataBase: new URL('https://adocode.com'),
 }
 
 export default function RootLayout({

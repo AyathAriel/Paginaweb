@@ -217,7 +217,7 @@ Este proyecto es propiedad de **ADO CODE Technologies**. Todos los derechos rese
 
 **ADO CODE Technologies**
 - 🌐 **Website**: [En construcción]
-- 📧 **Email**: contacto@adocode.com
+- 📧 **Email**: ayath@adocodetech.com
 - 📱 **Teléfono**: +507 6644-8655
 - 📍 **Ubicación**: Ciudad de Panamá, Panamá
 

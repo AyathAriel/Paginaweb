@@ -166,7 +166,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-medium">Correo electrónico</h3>
-                      <p className="text-muted-foreground">contacto@adocode.com</p>
+                      <p className="text-muted-foreground">ayath@adocodetech.com</p>
                     </div>
                   </div>
 
