@@ -1,7 +1,7 @@
 # ADO CODE Technologies - Website Corporativo
 
 <div align="center">
-  <img src="public/logo-256.png" alt="ADO CODE Technologies Logo" width="200" height="200">
+  <img src="public/concept2_top_right_BLACK_transparent.png" alt="Concept2 Company Logo" width="200" height="200">
   
   <h3>Transformamos empresas con soluciones tecnológicas avanzadas</h3>
   

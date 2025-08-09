@@ -29,9 +29,8 @@ export default function AnimatedLogo({
 
   const { width, height, logoSize } = dimensions[size]
 
-  // Determinar qué imagen usar según el tamaño
-  const logoSrc =
-    size === "sm" ? "/logo-64.png" : size === "md" ? "/logo-64.png" : size === "lg" ? "/logo-128.png" : "/logo-256.png"
+  // Usar el nuevo logo de la empresa
+  const logoSrc = "/concept2_top_right_BLACK_transparent.png"
 
   return (
     <div
@@ -44,21 +43,23 @@ export default function AnimatedLogo({
         animate={{
           opacity: 1,
           scale: 1,
-          rotate: isHovered ? [0, -5, 5, -5, 0] : 0,
-          y: isHovered ? [0, -5, 0] : 0,
+          rotate: isHovered ? [0, 5] : 0,
+          y: isHovered ? [0, -5] : 0,
         }}
         transition={{
           duration: isHovered ? 0.5 : 0.3,
-          type: "spring",
+          type: isHovered ? "keyframes" : "spring",
           stiffness: 200,
           damping: 10,
+          repeat: isHovered ? 1 : 0,
+          repeatType: "reverse",
         }}
         className={`relative ${className}`}
         style={{ width: logoSize, height: logoSize }}
       >
         <Image
           src={logoSrc || "/placeholder.svg"}
-          alt="ADO CODE Technologies Logo"
+          alt="Concept2 Company Logo"
           width={logoSize}
           height={logoSize}
           className="object-contain"

@@ -18,18 +18,19 @@ export default function LogoLoader({ onComplete }: LogoLoaderProps) {
       >
         <motion.div
           animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 10, -10, 0],
+            scale: [1, 1.2],
+            rotate: [0, 10],
           }}
           transition={{
             duration: 1.5,
-            repeat: 1,
+            repeat: 2,
             repeatType: "reverse",
+            type: "keyframes",
           }}
         >
           <Image
-            src="/logo-256.png"
-            alt="ADO CODE Technologies Logo"
+            src="/concept2_top_right_BLACK_transparent.png"
+            alt="Concept2 Company Logo"
             width={150}
             height={150}
             className="object-contain"

@@ -18,15 +18,14 @@ export default function Logo({ size = "md", className, containerClassName }: Log
 
   const { width, height } = dimensions[size]
 
-  // Determinar qué imagen usar según el tamaño
-  const logoSrc =
-    size === "sm" ? "/logo-64.png" : size === "md" ? "/logo-64.png" : size === "lg" ? "/logo-128.png" : "/logo-256.png"
+  // Usar el nuevo logo de la empresa
+  const logoSrc = "/concept2_top_right_BLACK_transparent.png"
 
   return (
     <div className={cn("relative", containerClassName)} style={{ width, height }}>
       <Image
         src={logoSrc || "/placeholder.svg"}
-        alt="ADO CODE Technologies Logo"
+        alt="Concept2 Company Logo"
         width={width}
         height={height}
         className={cn("object-contain", className)}

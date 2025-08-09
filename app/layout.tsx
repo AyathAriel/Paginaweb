@@ -6,6 +6,8 @@ import Footer from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 // Importar el componente LogoPreload
 import LogoPreload from "@/components/logo-preload"
+// Importar el componente Favicon
+import Favicon from "@/components/favicon"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -43,6 +45,7 @@ export default function RootLayout({
     >
       <head>
         <LogoPreload />
+        <Favicon />
       </head>
       <body className="min-h-screen flex flex-col">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>

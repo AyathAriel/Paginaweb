@@ -70,8 +70,8 @@ export default function HeroLogoAnimation() {
         }}
       >
         <Image
-          src="/logo-256.png"
-          alt="ADO CODE Technologies Logo"
+          src="/concept2_top_right_BLACK_transparent.png"
+          alt="Concept2 Company Logo"
           width={200}
           height={200}
           className="object-contain"
