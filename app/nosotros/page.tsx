@@ -71,14 +71,118 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="relative mx-auto aspect-video lg:aspect-square max-w-md lg:max-w-none overflow-hidden rounded-lg">
-              <Image
-                src="/placeholder.svg?height=600&width=600"
-                alt="Equipo de ADO CODE Technologies"
-                fill
-                className="object-cover"
-              />
-            </div>
+            <motion.div 
+              className="relative mx-auto max-w-md lg:max-w-none"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, type: "spring", stiffness: 80 }}
+            >
+              <div className="relative flex justify-center items-center min-h-[400px] overflow-hidden">
+                {/* Partículas animadas de fondo */}
+                {[...Array(12)].map((_, i) => (
+                  <motion.div
+                    key={i}
+                    className="absolute w-1 h-1 bg-blue-500/30 rounded-full"
+                    style={{
+                      left: `${Math.random() * 100}%`,
+                      top: `${Math.random() * 100}%`,
+                    }}
+                    animate={{
+                      y: [0, -30, 0],
+                      x: [0, Math.random() * 20 - 10, 0],
+                      opacity: [0.3, 0.8, 0.3],
+                      scale: [1, 1.5, 1],
+                    }}
+                    transition={{
+                      duration: 3 + Math.random() * 2,
+                      repeat: Infinity,
+                      delay: Math.random() * 2,
+                      ease: "easeInOut",
+                    }}
+                  />
+                ))}
+                
+                {/* Partículas más grandes */}
+                {[...Array(6)].map((_, i) => (
+                  <motion.div
+                    key={`large-${i}`}
+                    className="absolute w-2 h-2 bg-blue-400/20 rounded-full blur-sm"
+                    style={{
+                      left: `${Math.random() * 100}%`,
+                      top: `${Math.random() * 100}%`,
+                    }}
+                    animate={{
+                      y: [0, -50, 0],
+                      x: [0, Math.random() * 30 - 15, 0],
+                      opacity: [0.2, 0.6, 0.2],
+                    }}
+                    transition={{
+                      duration: 4 + Math.random() * 3,
+                      repeat: Infinity,
+                      delay: Math.random() * 3,
+                      ease: "easeInOut",
+                    }}
+                  />
+                ))}
+                
+                {/* Logo principal minimalista */}
+                <motion.div 
+                  className="relative z-10 flex justify-center items-center"
+                  whileHover={{ 
+                    scale: 1.05,
+                    transition: { duration: 0.3, ease: "easeOut" }
+                  }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  <div className="relative">
+                    <motion.div
+                      initial={{ rotateY: 0 }}
+                      whileHover={{ rotateY: 180 }}
+                      transition={{ duration: 0.6, ease: "easeInOut" }}
+                      style={{ transformStyle: "preserve-3d" }}
+                    >
+                      <Image
+                        src="/concept2_top_right_BLACK_transparent.png"
+                        alt="Company Logo"
+                        width={280}
+                        height={280}
+                        className="object-contain filter drop-shadow-lg"
+                        priority
+                      />
+                    </motion.div>
+                    
+                    {/* Efecto de resplandor sutil al hacer hover */}
+                    <motion.div
+                      className="absolute inset-0 bg-gradient-radial from-blue-500/10 via-transparent to-transparent rounded-full"
+                      animate={{
+                        opacity: [0, 0.3, 0],
+                        scale: [0.8, 1.2, 0.8],
+                      }}
+                      transition={{
+                        duration: 3,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      }}
+                    />
+                  </div>
+                </motion.div>
+                
+                {/* Líneas decorativas minimalistas */}
+                <motion.div
+                  className="absolute top-1/2 left-0 w-12 h-px bg-gradient-to-r from-transparent to-blue-500/30"
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  transition={{ duration: 0.8, delay: 0.5 }}
+                />
+                <motion.div
+                  className="absolute top-1/2 right-0 w-12 h-px bg-gradient-to-l from-transparent to-blue-500/30"
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  transition={{ duration: 0.8, delay: 0.7 }}
+                />
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
