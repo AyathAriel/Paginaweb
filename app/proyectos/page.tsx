@@ -91,14 +91,6 @@ export default function ProjectsPage() {
                     ))}
                   </div>
                 </CardContent>
-                <CardFooter>
-                  <Button variant="ghost" className="gap-1" asChild>
-                    <Link href={`/proyectos/${index + 1}`}>
-                      Ver detalles
-                      <ArrowUpRight className="h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardFooter>
               </Card>
             ))}
           </div>
