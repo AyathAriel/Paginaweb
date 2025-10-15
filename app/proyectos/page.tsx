@@ -7,52 +7,44 @@ import { ArrowUpRight } from "lucide-react"
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "Sistema de gestión empresarial",
+      title: "Aplicación para Juntas Comunales",
       description:
-        "Implementación de un sistema personalizado para la gestión integral de procesos empresariales, incluyendo módulos de ventas, inventario, recursos humanos y finanzas.",
-      image: "/placeholder.svg?height=300&width=500",
-      tags: ["Automatización", "IA", "Nube"],
-      client: "Empresa Manufacturera",
+        "Sistema de gestión para juntas comunales que permite la recepción y aprobación de solicitudes ciudadanas de manera digital y eficiente.",
+      image: "/Captura de pantalla 2025-10-14 185750.png",
+      tags: ["Gestión Pública", "Digitalización", "Comunidad"],
+      client: "Juntas Comunales de Panamá",
     },
     {
-      title: "Plataforma de análisis de datos",
+      title: "Plataforma de RRHH con IA",
       description:
-        "Desarrollo de una plataforma que permite visualizar y analizar grandes volúmenes de datos en tiempo real, facilitando la toma de decisiones estratégicas.",
-      image: "/placeholder.svg?height=300&width=500",
-      tags: ["Big Data", "Visualización", "Análisis predictivo"],
-      client: "Empresa de Retail",
+        "Herramienta de recursos humanos que utiliza inteligencia artificial para optimizar la selección de personal y la gestión de talento.",
+      image: "/Captura de pantalla 2025-10-14 185816.png",
+      tags: ["Recursos Humanos", "IA", "Automatización"],
+      client: "Empresas de Tecnología",
     },
     {
-      title: "Integración de sistemas legacy",
+      title: "Aplicación de Gestión para Gimnasios",
       description:
-        "Modernización e integración de sistemas antiguos con nuevas tecnologías para mejorar el rendimiento y facilitar la transición a una infraestructura más moderna.",
-      image: "/placeholder.svg?height=300&width=500",
-      tags: ["Integración", "Optimización", "Migración"],
-      client: "Institución Financiera",
+        "Solución integral para la administración de gimnasios, incluyendo control de acceso, gestión de miembros, clases y control de pagos.",
+      image: "/Captura de pantalla 2025-10-14 185836.png",
+      tags: ["Fitness", "Gestión", "App Móvil"],
+      client: "Cadenas de Gimnasios",
     },
     {
-      title: "Aplicación móvil para servicio al cliente",
+      title: "Aplicación para Salón de Belleza",
       description:
-        "Desarrollo de una aplicación móvil que permite a los clientes realizar consultas, solicitar servicios y hacer seguimiento de sus pedidos de forma fácil y rápida.",
-      image: "/placeholder.svg?height=300&width=500",
-      tags: ["App Móvil", "UX/UI", "Servicio al Cliente"],
-      client: "Empresa de Servicios",
+        "Software para la gestión de salones de belleza, que facilita la programación de citas, control de ingresos y servicios más populares.",
+      image: "/Captura de pantalla 2025-10-14 185857.png",
+      tags: ["Belleza", "Gestión de Citas", "Software"],
+      client: "Salones de Belleza",
     },
     {
-      title: "Dashboard de inteligencia de negocios",
+      title: "MercaliaPTY",
       description:
-        "Implementación de un dashboard interactivo que muestra los KPIs más importantes del negocio, con visualizaciones claras y acceso a datos históricos.",
-      image: "/placeholder.svg?height=300&width=500",
-      tags: ["Business Intelligence", "Dashboard", "KPIs"],
-      client: "Corporación Multinacional",
-    },
-    {
-      title: "Automatización de procesos de marketing",
-      description:
-        "Desarrollo de un sistema que automatiza campañas de marketing digital, segmentación de clientes y análisis de resultados.",
-      image: "/placeholder.svg?height=300&width=500",
-      tags: ["Marketing", "Automatización", "CRM"],
-      client: "Agencia de Marketing",
+        "Plataforma de comercio electrónico que conecta a vendedores verificados con compradores en Panamá, garantizando seguridad y confianza.",
+      image: "/Captura de pantalla 2025-10-14 190018.png",
+      tags: ["E-commerce", "Marketplace", "Seguridad"],
+      client: "MercaliaPTY",
     },
   ]
 
