@@ -55,28 +55,28 @@ const AIIcon = () => (
 export default function Services() {
   const services = [
     {
-      icon: <AutomationIcon />,
-      title: "Automatización Inteligente",
-      description:
-        "Acelera tus procesos empresariales con IA y elimina tareas manuales para aumentar la productividad.",
-    },
-    {
       icon: <CodeIcon />,
       title: "Desarrollo de Software a Medida",
       description:
-        "Soluciones tecnológicas que se adaptan a tus necesidades específicas, desde aplicaciones web hasta sistemas empresariales.",
-    },
-    {
-      icon: <OptimizationIcon />,
-      title: "Optimización de Procesos",
-      description:
-        "Mejora la productividad y reduce costos mediante la implementación de tecnologías avanzadas en tus procesos de negocio.",
+        "Creamos aplicaciones web, móviles y sistemas SaaS personalizados para digitalizar y potenciar tu negocio, como hemos hecho para gimnasios y salones.",
     },
     {
       icon: <AIIcon />,
-      title: "Consultoría en IA y Big Data",
+      title: "Inteligencia Artificial y Automatización",
       description:
-        "Transforma tu negocio con datos inteligentes y estrategias de implementación de tecnologías emergentes.",
+        "Implementamos soluciones de IA para optimizar procesos, como en nuestra plataforma de RRHH, mejorando la eficiencia y la toma de decisiones.",
+    },
+    {
+      icon: <OptimizationIcon />,
+      title: "Plataformas E-commerce y Marketplace",
+      description:
+        "Desarrollamos plataformas de comercio electrónico robustas y seguras, conectando vendedores y compradores como en nuestro proyecto MercaliaPTY.",
+    },
+    {
+      icon: <AutomationIcon />,
+      title: "Consultoría y Transformación Digital",
+      description:
+        "Te guiamos en la modernización de tus operaciones, analizando tus procesos para implementar las tecnologías que tu empresa realmente necesita.",
     },
   ]
 

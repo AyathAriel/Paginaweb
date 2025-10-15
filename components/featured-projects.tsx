@@ -9,24 +9,22 @@ import { motion } from "framer-motion"
 export default function FeaturedProjects() {
   const projects = [
     {
-      title: "Sistema de gestión empresarial",
-      description: "Implementación de un sistema personalizado para la gestión integral de procesos empresariales.",
-      image: "/placeholder.svg?height=300&width=500",
-      tags: ["Automatización", "IA", "Nube"],
+      title: "MercaliaPTY",
+      description: "Plataforma de comercio electrónico que conecta a vendedores verificados con compradores en Panamá.",
+      image: "/Captura de pantalla 2025-10-14 190018.png",
+      tags: ["E-commerce", "Marketplace", "Seguridad"],
     },
     {
-      title: "Plataforma de análisis de datos",
-      description:
-        "Desarrollo de una plataforma que permite visualizar y analizar grandes volúmenes de datos en tiempo real.",
-      image: "/placeholder.svg?height=300&width=500",
-      tags: ["Big Data", "Visualización", "Análisis predictivo"],
+      title: "Aplicación de Gestión para Gimnasios",
+      description: "Solución integral para la administración de gimnasios, incluyendo control de acceso, miembros y pagos.",
+      image: "/Captura de pantalla 2025-10-14 185836.png",
+      tags: ["Fitness", "Gestión", "App Móvil"],
     },
     {
-      title: "Integración de sistemas legacy",
-      description:
-        "Modernización e integración de sistemas antiguos con nuevas tecnologías para mejorar el rendimiento.",
-      image: "/placeholder.svg?height=300&width=500",
-      tags: ["Integración", "Optimización", "Migración"],
+      title: "Plataforma de RRHH con IA",
+      description: "Herramienta de RRHH que utiliza IA para optimizar la selección de personal y la gestión de talento.",
+      image: "/Captura de pantalla 2025-10-14 185816.png",
+      tags: ["Recursos Humanos", "IA", "Automatización"],
     },
   ]
 
@@ -80,12 +78,6 @@ export default function FeaturedProjects() {
                       </span>
                     ))}
                   </div>
-                  <Button variant="ghost" size="sm" className="group" asChild>
-                    <Link href="#">
-                      Ver detalles
-                      <ArrowUpRight className="h-4 w-4 ml-1 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                    </Link>
-                  </Button>
                 </div>
               </div>
             </motion.div>
