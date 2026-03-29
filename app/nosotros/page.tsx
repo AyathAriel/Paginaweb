@@ -30,27 +30,6 @@ export default function AboutPage() {
     }
   }
 
-  const teamMembers = [
-    {
-      name: "Carlos Méndez",
-      position: "CTO",
-      bio: "Especialista en inteligencia artificial y arquitectura de sistemas",
-      image: "/placeholder.svg?height=300&width=300",
-    },
-    {
-      name: "María González",
-      position: "Directora de Proyectos",
-      bio: "10+ años de experiencia en gestión de proyectos tecnológicos",
-      image: "/placeholder.svg?height=300&width=300",
-    },
-    {
-      name: "Juan Pérez",
-      position: "Lead Developer",
-      bio: "Experto en desarrollo full-stack y automatización de procesos",
-      image: "/placeholder.svg?height=300&width=300",
-    },
-  ]
-
   return (
     <main>
       <section className="py-20 md:py-28 bg-muted/30">
@@ -343,33 +322,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-20 bg-muted/30">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center space-y-4 text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">Nuestro Equipo</h2>
-            <p className="max-w-[700px] text-muted-foreground md:text-lg">
-              Un grupo de expertos comprometidos con la excelencia y la innovación
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {teamMembers.map((member, index) => (
-              <Card key={index} className="overflow-hidden">
-                <div className="aspect-square relative">
-                  <Image src={member.image || "/placeholder.svg"} alt={member.name} fill className="object-cover" />
-                </div>
-                <CardHeader className="pb-2">
-                  <CardTitle>{member.name}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="font-medium text-primary mb-2">{member.position}</p>
-                  <p className="text-sm text-muted-foreground">{member.bio}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
     </main>
   )
 }

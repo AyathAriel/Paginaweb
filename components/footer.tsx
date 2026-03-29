@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react"
+import { Mail, MapPin, Phone } from "lucide-react"
 
 // Importar el componente Logo
 import AnimatedLogo from "./animated-logo"
@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-50 dark:bg-slate-900 pt-16 pb-8 border-t">
       <div className="container px-4 md:px-6">
-        <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-4">
+        <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3">
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <AnimatedLogo size="sm" />
@@ -76,39 +76,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div className="space-y-4">
-            <h3 className="text-lg font-bold">Síguenos</h3>
-            <div className="flex gap-3">
-              <Link
-                href="#"
-                className="bg-white dark:bg-slate-800 p-2 rounded-full text-muted-foreground hover:text-primary transition-colors shadow-sm"
-              >
-                <Facebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
-              </Link>
-              <Link
-                href="#"
-                className="bg-white dark:bg-slate-800 p-2 rounded-full text-muted-foreground hover:text-primary transition-colors shadow-sm"
-              >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link
-                href="#"
-                className="bg-white dark:bg-slate-800 p-2 rounded-full text-muted-foreground hover:text-primary transition-colors shadow-sm"
-              >
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
-              </Link>
-              <Link
-                href="#"
-                className="bg-white dark:bg-slate-800 p-2 rounded-full text-muted-foreground hover:text-primary transition-colors shadow-sm"
-              >
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
-            </div>
-          </div>
         </div>
 
         <div className="mt-16 pt-6 border-t text-center text-sm text-muted-foreground">
